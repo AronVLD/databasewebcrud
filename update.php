@@ -7,7 +7,10 @@
     $record = mysqli_fetch_assoc($result);
 ?>
 
-<form action="./update_script.php" method="post">
+<form action="./update_script.php" method="POST">
+  <div class="mb-3">
+    <input type="number" class="form-control" id="id" placeholder="id" name="id" value="<?php echo $record["id"] ?>" style="visibility:hidden; display:none;">
+  </div>
   <div class="mb-3">
     <label for="naam" class="form-label">Naam</label>
     <input type="text" class="form-control" id="naam" placeholder="name" name="naam" value="<?php echo $record["naam"] ?>">
@@ -40,7 +43,6 @@
       <option value="Nee" <?php if($record["koekjes"] == "Nee") {echo "selected";} ?>>Nee</option>
       <option value="Rather not say" <?php if($record["koekjes"] == "Rather not say") {echo "selected";} ?>>Rather not say</option>
     </select>
-    <input type="hidden" values="<?php echo $id; ?>" name="id">
   </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
+  <button type="submit" class="btn btn-primary">Submit</button> 
 </form>

@@ -7,22 +7,22 @@
  $records = "";
  while ($record = mysqli_fetch_assoc($result)) {
   $records .="<tr>
-          <th scope='row'>" . $record["id"] . "</th>
-          <td> " . $record["naam"] . "</td>
-          <td> " . $record["email"] . "</td>
-          <td> " . $record["password"] . "</td>
-          <td> " . $record["gender"] . "</td>
-          <td> " . $record["koekjes"] . "</td>
+          <th scope='row'>" . $record['id'] . "</th>
+          <td> " . $record['naam'] . "</td>
+          <td> " . $record['email'] . "</td>
+          <td> " . $record['password'] . "</td>
+          <td> " . $record['gender'] . "</td>
+          <td> " . $record['koekjes'] . "</td>
           <td>
-              <a href='./index.php?content=update&id=". $record["id"] . "'>
+              <a href='./index.php?content=update&id=". $record['id'] . "'>
                  <img src='./img/b_edit.png' alt='pencil'>
               </a>
           </td>
           <td>
-              <a href='./index.php?content=delete&id=". $record["id"] . "'>
+              <a href='./index.php?content=delete&id=". $record['id'] . "'>
                 <img src='./img/b_drop.png' alt='cross'>
               </a>
-          </td>>
+          </td>
       <tr>";
 }
 ?>

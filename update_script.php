@@ -2,7 +2,7 @@
     include("./connectdb.php");
     include("./functions.php");
 
-    $id = sanitize( $_POST["id"]);
+    $id = ($_POST["id"]);
     $naam = sanitize($_POST["naam"]);
     $email = sanitize($_POST["email"]);
     $password = sanitize($_POST["password"]);
@@ -16,8 +16,9 @@
                 `gender` = '$gender',
                 `koekjes` = '$koekjes'
             
-            WHERE `id` = $id;";
-
+            WHERE `users`.`id`= $id;";
+ 
     mysqli_query($conn, $sql);
     header("Location: ./index.php?content=read");
+
 ?>

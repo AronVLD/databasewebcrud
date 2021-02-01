@@ -10,19 +10,23 @@ background-image: linear-gradient( black, blue );
     color: black;
 }
 #navigation {
-    background-color: black;
-    color:blue;
+    background-color: black !important;
+    color:blue !important;
+    border: 5px solid blue;
+    border-radius: 25px;
+    text-align: center;
+    padding-left: 40%;
 }
 #content{ 
     border: 5px solid blue;
-    color: blue;
+    color: white;
     background-color: black;
     min-height: 470px;
     margin-top: 50px;
     padding-left: 20px;
     padding-top: 20px;
     margin-bottom: 50px;
-    border-radius: 50px;
+    border-radius: 25px;
 }
 .handlee{ 
     font-family: 'Handlee', cursive;
