@@ -1,0 +1,36 @@
+#header {
+    text-align: center;
+color: white;
+margin-bottom: 20px;
+background-image: linear-gradient( black, blue );
+}
+#footer{
+    text-align: center;
+    background-color: blue;
+    color: black;
+}
+#navigation {
+    background-color: black;
+    color:blue;
+}
+#content{ 
+    border: 5px solid blue;
+    color: blue;
+    background-color: black;
+    min-height: 470px;
+    margin-top: 50px;
+    padding-left: 20px;
+    padding-top: 20px;
+    margin-bottom: 50px;
+    border-radius: 50px;
+}
+.handlee{ 
+    font-family: 'Handlee', cursive;
+}
+img{
+    border-radius: 10px;
+}
+.handlee p:nth-of-type(1){
+    color: black;
+}
+tr {color:white;}
