@@ -1,6 +1,6 @@
 <?php
 
-    $servername = "localhost1";
+    $servername = "localhost";
     $username = "root";
     $password = "";
     $dbname = "formdatabase";
